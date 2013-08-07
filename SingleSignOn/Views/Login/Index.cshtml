@@ -1,0 +1,33 @@
+﻿@using SingleSignOn.Models
+
+@model LoginModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm(new { returnUrl = ViewBag.ReturnUrl }))
+{
+    @Html.ValidationSummary()
+
+    <div class="left">
+        @Html.LabelFor(m => m.Username)
+    </div>
+    <div>
+        @Html.EditorFor(m => m.Username)
+    </div>
+
+    <div class="left">
+        @Html.LabelFor(m => m.Password)
+    </div>
+    <div>
+        @Html.EditorFor(m => m.Password)
+    </div>
+
+    <div class="left"></div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+}

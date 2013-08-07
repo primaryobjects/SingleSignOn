@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleSignOn", "SingleSignOn\SingleSignOn.csproj", "{60BE1157-6830-4809-A8B0-CB6273778F9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelyingParty1", "RelyingParty1\RelyingParty1.csproj", "{30F97FBA-5C06-44E5-849D-CBED6D49AC47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60BE1157-6830-4809-A8B0-CB6273778F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BE1157-6830-4809-A8B0-CB6273778F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BE1157-6830-4809-A8B0-CB6273778F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BE1157-6830-4809-A8B0-CB6273778F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F97FBA-5C06-44E5-849D-CBED6D49AC47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F97FBA-5C06-44E5-849D-CBED6D49AC47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F97FBA-5C06-44E5-849D-CBED6D49AC47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F97FBA-5C06-44E5-849D-CBED6D49AC47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
