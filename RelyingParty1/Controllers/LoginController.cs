@@ -11,7 +11,7 @@ namespace RelyingParty1.Controllers
     {
         public ActionResult Index()
         {
-            FederatedAuthentication.WSFederationAuthenticationModule.RedirectToIdentityProvider("customsts.dev", "http://localhost:667/user", true);
+            FederatedAuthentication.WSFederationAuthenticationModule.RedirectToIdentityProvider("customsts.dev", "http://localhost:26756/user", true);
             return View();
         }
     }

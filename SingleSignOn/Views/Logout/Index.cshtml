@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Signing out ..";
+}
+
+@if (!string.IsNullOrEmpty(Request.QueryString["wreply"]))
+{
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            document.location = '@Request.QueryString["wreply"]';
+        });
+    </script>
+}
+
+<p style='font-family: verdana; font-size: 12px; margin: 50px 0 0 20px;'>Signing out ..</p>
+
+<!-- Relying party sign-out urls (add one for each site participating in SSO so that signing out of SSO signs out of each site) -->
+<img src="http://google.com/logout" style="width: 1px; height: 1px;" />
+<img src="http://yahoo.com/logout" style="width: 1px; height: 1px;" />

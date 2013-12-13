@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDescriptor ID="_70a250d5-e3e1-494a-a392-7ed1736f3180" entityID="http://customsts.dev/" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <RoleDescriptor xsi:type="fed:SecurityTokenServiceType" protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>
+            <!-- Paste your certificate here. See http://www.primaryobjects.com/CMS/Article155.aspx -->
+          </X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <ContactPerson contactType="administrative">
+      <GivenName>AP</GivenName>
+    </ContactPerson>
+    <fed:ClaimTypesOffered>
+      <auth:ClaimType Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth:DisplayName>Name</auth:DisplayName>
+        <auth:Description>The name of the subject.</auth:Description>
+      </auth:ClaimType>
+      <auth:ClaimType Uri="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" Optional="true" xmlns:auth="http://docs.oasis-open.org/wsfed/authorization/200706">
+        <auth:DisplayName>Role</auth:DisplayName>
+        <auth:Description>The role of the subject.</auth:Description>
+      </auth:ClaimType>
+    </fed:ClaimTypesOffered>
+    <fed:SecurityTokenServiceEndpoint>
+      <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+        <Address>http://customsts.dev/</Address>
+      </EndpointReference>
+    </fed:SecurityTokenServiceEndpoint>
+    <fed:PassiveRequestorEndpoint>
+      <EndpointReference xmlns="http://www.w3.org/2005/08/addressing">
+        <Address>http://customsts.dev/</Address>
+      </EndpointReference>
+    </fed:PassiveRequestorEndpoint>
+  </RoleDescriptor>
+</EntityDescriptor>
